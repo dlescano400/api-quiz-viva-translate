@@ -1,5 +1,5 @@
 import express from 'express'
-import { MongoDB } from '../services/index'
+import { MongoDB } from './services/index'
 import users from './routes/users'
 import questions from './routes/questions'
 
