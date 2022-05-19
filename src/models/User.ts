@@ -6,7 +6,10 @@ export interface IUsers extends Document {
 }
 
 const usersSchema = new Schema({
-  user: String,
+  user: {
+    type: String,
+    unique: true // `email` must be unique
+  },
   pass: String
 })
 
